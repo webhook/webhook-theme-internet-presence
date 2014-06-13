@@ -1,4 +1,4 @@
 $(document).ready(function() {
-  $('.fluidbox').fluidbox();
+  $('.fluidbox, article a').fluidbox();
 });
 

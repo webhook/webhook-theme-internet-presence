@@ -1,12 +1,6 @@
-{# YOUR HOMEPAGE #}
+{% extends "templates/partials/inner_page.html" %}
 
-{# First time seeing extend or blocks? Want to know how it works? Tutorial here: http://www.webhook.com #}
-{% extends "templates/partials/base.html" %}
-
-{% block content %}
-  <div class="container">
-    {% include "templates/partials/header.html" %}
-
+{% block inner_content %}
     <ul class="work">
     {% for item in work|sort('sort_order') %}
       <li>
@@ -23,8 +17,5 @@
       </li>
     {% endfor %}
     </ul>
-    {% include "templates/partials/social.html" %}
-  </div>
-
 {% endblock %}
 

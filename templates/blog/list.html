@@ -1,0 +1,28 @@
+{% extends "templates/partials/inner_page.html" %}
+
+{% block inner_content %}
+
+  {# Copy this to any page you want blog data on. #}
+  {% set data = get('blog') %}
+  {% set data = data|sort('publish_date', true) %}
+
+  {# This is how you set pagination. #}
+  {% set data = paginate(data, 20) %}
+
+
+  <ul class="blog-list">
+    {% for id, object in data %}
+      <li>
+        <a href="{{ url(object) }}">
+          <p class="date">{{ object.publish_date|date('F d Y') }}</p>
+          <h3>{{ object.name }}</h3>
+          <p class="deck">{{ object.deck }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr/>
+  {# The actual pagination template, feel free to edit or replace the default one. #}
+  {% include "templates/partials/paginator.html" %}
+
+{% endblock %}

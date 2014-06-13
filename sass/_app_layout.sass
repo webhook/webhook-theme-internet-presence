@@ -40,6 +40,36 @@ header img
   max-width: 800px
   margin-top: $gutter * 2
 
+.blog-list a
+  color: $text-color !important
+  display: block
+
+.blog-list li
+  padding: $gutter 0
+  border-bottom: solid 1px $table-border-color
+  &:first-child
+    padding-top: 0
+  &:last-child
+    border-bottom: none
+    padding-bottom: $gutter / 2
+
+article h1, .blog-list h3
+  font-size: 200%
+  font-family: $base-font-family
+  margin-bottom: $base-line-height / 2
+article .deck, .blog-list .deck
+  font-size: 150%
+  line-height: 1.5
+  font-family: $base-font-family
+article .date, .blog-list .date
+  font-family: $base-font-family
+  font-size: 90%
+  margin-bottom: $base-line-height / 4
+  color: $text-medium
+article p
+  font-family: $custom-font-family
+  font-size: 120%
+  line-height: 1.5
 .work
   margin-bottom: $gutter
 
@@ -58,7 +88,7 @@ header img
     .time
       color: $text-medium
       font-size: 90%
-      margin-bottom: $base-line-height / 4
+      margin: $base-line-height / 4 0
     .text
       position: absolute
       bottom: $gutter * 2
