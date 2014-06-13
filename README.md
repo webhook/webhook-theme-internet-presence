@@ -1,8 +1,8 @@
-## Wyrm theme for Webhook
+## Webhook Internet Presence theme
 
-This is a starter site theme that uses the [Wyrm Sass](http://www.wyrmsass.org)
-frontend framework. It also includes some other common javascript used
-in most website builds.
+This is a simple theme for people that need an about.me style site with some light
+blogging and a list of their appareances / events. Included are the sass files
+if you wish to work directly with those files.
 
 ## Usage
 
