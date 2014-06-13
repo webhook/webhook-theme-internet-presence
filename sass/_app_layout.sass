@@ -46,9 +46,11 @@ header img
 .work li
   +outer-container
   border-bottom: solid 1px $table-border-color
-  padding: $gutter 0
+  padding: $gutter * 2 0
   position: relative
   min-height: 250px
+  &:first-child
+    padding-top: $gutter
   .desc, .gallery
     +span-columns(6)
   .desc
@@ -59,7 +61,7 @@ header img
       margin-bottom: $base-line-height / 4
     .text
       position: absolute
-      bottom: $gutter
+      bottom: $gutter * 2
       right: 0
       +span-columns(6)
     h3
