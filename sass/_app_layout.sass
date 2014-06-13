@@ -68,15 +68,20 @@ header img
     +span-columns(4)
     text-transform: uppercase
     color: $text-medium
+    span
+      display: inline-block
+      background: $gray-dark
+      color: $text-invert
+      padding: $base-line-height / 8 $base-line-height / 4
   .event-details
     +span-columns(8)
     +omega
 
-article h1, .blog-list h3
+article h1,
   font-size: 200%
   font-family: $base-font-family
   margin-bottom: $base-line-height / 2
-article .deck, .blog-list .deck
+article .deck,
   font-size: 150%
   line-height: 1.5
   font-family: $base-font-family
@@ -100,19 +105,13 @@ article p
   min-height: 250px
   &:first-child
     padding-top: $gutter
+  .time
+    color: $text-medium
+    font-size: 90%
+    margin: $base-line-height / 4 0
+
   .desc, .gallery
     +span-columns(6)
-  .desc
-    +omega
-    .time
-      color: $text-medium
-      font-size: 90%
-      margin: $base-line-height / 4 0
-    .text
-      position: absolute
-      bottom: $gutter * 2
-      right: 0
-      +span-columns(6)
     h3
       margin-bottom: $base-line-height / 2
       font-size: 150%
@@ -126,7 +125,22 @@ article p
   p:last-child
     margin-bottom: 0
 
++media($mobile)
+  .event-list li
+    .event-time, .event-details
+      +span-columns(8)
+    .event-time
+      margin-bottom: $base-line-height / 2
+  .work li
+    .desc, .gallery
+      +span-columns(4)
+    .gallery
+      margin-bottom: $gutter
+
+
 +media($tablet)
+  .container
+    padding: 0 $gutter
   .home-main
     width: 100%
     padding: $gutter * 2
@@ -146,6 +160,15 @@ article p
     img
       height: auto
       max-width: 75%
+  .work li
+    .desc
+      +omega
+      .text
+        position: absolute
+        bottom: $gutter * 2
+        right: 0
+        +span-columns(6)
+
 +media($desktop-wide)
   .home-main
     margin: $gutter * 2 $gutter * 4
