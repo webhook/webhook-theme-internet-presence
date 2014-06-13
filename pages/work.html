@@ -24,7 +24,7 @@
       <li>
         <div class="gallery">
           {% for image in item.gallery %}
-            <a href="{{ image.url }}"><img src="{{ image|imageSize(500) }}" /></a>
+            <a href="{{ image.url }}" class="fluidbox"><img src="{{ image|imageSize(500) }}" /></a>
           {% endfor %}
         </div>
         <div class="desc">

@@ -1,4 +1,4 @@
 $(document).ready(function() {
-  $('a').fluidbox();
+  $('.fluidbox').fluidbox();
 });
 
