@@ -1,0 +1,650 @@
+{
+  "aboutme": {
+    "controls": [
+      {
+        "controlType": "instruction",
+        "help": "This page builds out the homepage of your site as well as some other links on the subpages.",
+        "hidden": false,
+        "label": "This builds the homepage",
+        "locked": false,
+        "name": "this_builds_the_homepage",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "image",
+        "help": "Use as large a photo as possible. Image should be taller vertically than horizontally. A classic profile shot.",
+        "hidden": false,
+        "label": "Photo",
+        "locked": false,
+        "name": "photo",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "help": "Make it a zinger.",
+        "hidden": false,
+        "label": "Tagline",
+        "locked": false,
+        "meta": {
+          "image": false,
+          "link": true,
+          "quote": false,
+          "table": false,
+          "video": false
+        },
+        "name": "tagline",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "wysiwyg",
+        "help": "Don't go overboard. This should be no more than a few short paragraphs.",
+        "hidden": false,
+        "label": "Bio",
+        "locked": false,
+        "meta": {
+          "image": false,
+          "link": true,
+          "quote": false,
+          "table": false,
+          "video": false
+        },
+        "name": "bio",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "email",
+        "help": "Optional.",
+        "hidden": false,
+        "label": "Email",
+        "locked": false,
+        "name": "email",
+        "placeholder": "me@gmail.com",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "phone",
+        "help": "Optional.",
+        "hidden": false,
+        "label": "Phone number",
+        "locked": false,
+        "name": "phone_number",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "about me",
+    "oneOff": true
+  },
+  "blog": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textarea",
+        "hidden": false,
+        "label": "Deck",
+        "locked": false,
+        "name": "deck",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "Body",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "body",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      }
+    ],
+    "name": "blog",
+    "oneOff": false
+  },
+  "eventsandappearances": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "help": "Name of your event or appearance.",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "help": "If event is a range of days, simply put when it starts.",
+        "hidden": false,
+        "label": "Event date",
+        "locked": false,
+        "name": "event_date",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "help": "(optional) Is your event a range of days, or need a looser format? Use this.",
+        "hidden": false,
+        "label": "Event date: descriptive",
+        "locked": false,
+        "name": "event_date_descriptive",
+        "placeholder": "June 3-8",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "wysiwyg",
+        "hidden": false,
+        "label": "Description",
+        "locked": false,
+        "meta": {
+          "image": true,
+          "link": true,
+          "quote": true,
+          "table": true,
+          "video": true
+        },
+        "name": "description",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      }
+    ],
+    "name": "Events and Appearances",
+    "oneOff": false
+  },
+  "notablework": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "number",
+        "help": "What position should we place this on your work page?",
+        "hidden": false,
+        "label": "Sort order",
+        "locked": false,
+        "name": "sort_order",
+        "placeholder": "1",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "help": "Can use any date formatting here.",
+        "hidden": false,
+        "label": "Time period",
+        "locked": false,
+        "name": "time_period",
+        "placeholder": "2010-2012",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "url",
+        "help": "Is there a place people can see this on the web?",
+        "hidden": false,
+        "label": "Link",
+        "locked": false,
+        "name": "link",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "gallery",
+        "help": "You can use only one image, or multiple. Try and use the same aspect ratio across your images.",
+        "hidden": false,
+        "label": "Gallery",
+        "locked": false,
+        "name": "gallery",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "wysiwyg",
+        "help": "Keep it short. Only one paragraph.",
+        "hidden": false,
+        "label": "Description",
+        "locked": false,
+        "meta": {
+          "image": false,
+          "link": true,
+          "quote": false,
+          "table": false,
+          "video": false
+        },
+        "name": "description",
+        "required": false,
+        "showInCms": false
+      }
+    ],
+    "name": "Notable work",
+    "oneOff": false
+  },
+  "socialnetworks": {
+    "controls": [
+      {
+        "controlType": "textfield",
+        "help": "Just put \"social\".",
+        "hidden": false,
+        "label": "Name",
+        "locked": true,
+        "name": "name",
+        "placeholder": "social",
+        "required": true,
+        "showInCms": true
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Create Date",
+        "locked": true,
+        "name": "create_date",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Last Updated",
+        "locked": true,
+        "name": "last_updated",
+        "required": true,
+        "showInCms": false
+      },
+      {
+        "controlType": "datetime",
+        "hidden": true,
+        "label": "Publish Date",
+        "locked": true,
+        "name": "publish_date",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "instruction",
+        "help": "Fill in as many as you have. Use the full http:// URL to your page.",
+        "hidden": false,
+        "label": "Each of these is optional",
+        "locked": false,
+        "name": "each_of_these_is_optional",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "help": "",
+        "hidden": false,
+        "label": "Deviant Art",
+        "locked": false,
+        "name": "deviant_art",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Dribble",
+        "locked": false,
+        "name": "dribble",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Facebook",
+        "locked": false,
+        "name": "facebook",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Flickr",
+        "locked": false,
+        "name": "flickr",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Github",
+        "locked": false,
+        "name": "github",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": false,
+        "label": "Google Plus",
+        "locked": false,
+        "name": "google_plus",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Hacker News",
+        "locked": false,
+        "name": "hacker_news",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Instagram",
+        "locked": false,
+        "name": "instagram",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "help": "",
+        "hidden": false,
+        "label": "LinkedIn",
+        "locked": false,
+        "name": "linkedin",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": true
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Pinterest",
+        "locked": false,
+        "name": "pinterest",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Reddit",
+        "locked": false,
+        "name": "reddit",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Spotify",
+        "locked": false,
+        "name": "spotify",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Stack Overflow",
+        "locked": false,
+        "name": "stack_overflow",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Steam",
+        "locked": false,
+        "name": "steam",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "help": "",
+        "hidden": false,
+        "label": "Tumblr",
+        "locked": false,
+        "name": "tumblr",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Twitter",
+        "locked": false,
+        "name": "twitter",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Vimeo",
+        "locked": false,
+        "name": "vimeo",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "url",
+        "hidden": false,
+        "label": "Youtube",
+        "locked": false,
+        "name": "youtube",
+        "placeholder": "http://",
+        "required": false,
+        "showInCms": false
+      },
+      {
+        "controlType": "textfield",
+        "hidden": true,
+        "label": "Preview URL",
+        "locked": true,
+        "name": "preview_url",
+        "required": true,
+        "showInCms": false
+      }
+    ],
+    "name": "Social networks",
+    "oneOff": true
+  }
+}
