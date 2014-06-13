@@ -53,6 +53,25 @@ header img
     border-bottom: none
     padding-bottom: $gutter / 2
 
+.event-list li
+  +outer-container
+  padding: $gutter 0
+  border-bottom: solid 1px $table-border-color
+  &:first-child
+    padding-top: 0
+  &:last-child
+    border-bottom: none
+    padding-bottom: $gutter / 2
+  p:last-child
+    margin-bottom: 0
+  .event-time
+    +span-columns(4)
+    text-transform: uppercase
+    color: $text-medium
+  .event-details
+    +span-columns(8)
+    +omega
+
 article h1, .blog-list h3
   font-size: 200%
   font-family: $base-font-family

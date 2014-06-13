@@ -1,0 +1,33 @@
+{% extends "templates/partials/inner_page.html" %}
+
+{% block inner_content %}
+
+  {# Copy this to any page you want eventsandappearances data on. #}
+  {% set data = get('eventsandappearances') %}
+
+  {# This is how you set pagination. #}
+  {% set data = paginate(data, 5) %}
+
+
+  <ul class="event-list">
+    {% for id, object in data %}
+      <li>
+        <div class="event-time">
+          {% if object.event_date_descriptive %}
+            {{ object.event_date_descriptive }}
+          {% else %}
+            {{ object.event_date|date('F d Y') }}
+          {% endif %}
+        </div>
+        <div class="event-details">
+          <h3>{{ object.name }}</h3>
+          {{ object.description|safe }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr/>
+  {# The actual pagination template, feel free to edit or replace the default one. #}
+  {% include "templates/partials/paginator.html" %}
+
+{% endblock %}
