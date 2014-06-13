@@ -1,0 +1,41 @@
+{# YOUR HOMEPAGE #}
+
+{# First time seeing extend or blocks? Want to know how it works? Tutorial here: http://www.webhook.com #}
+{% extends "templates/partials/base.html" %}
+
+{% block content %}
+  <div class="container">
+    <header>
+      <a href="/"><img src="{{ about.photo|imageCrop(100) }}" /></a>
+      <h1><a href="/">{{ about.name }}</a></h1>
+      <div class="tagline">{{ about.tagline|safe }}</div>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/work/">Appearances</a></li>
+          <li><a href="/work/">Essays</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <ul class="work">
+    {% for item in work|sort('sort_order') %}
+      <li>
+        <div class="gallery">
+          {% for image in item.gallery %}
+            <a href="{{ image.url }}"><img src="{{ image|imageSize(500) }}" /></a>
+          {% endfor %}
+        </div>
+        <div class="desc">
+          <p class="time">{{ item.time_period }}</p>
+          <h3><a href="{{ item.link }}">{{ item.name }}</a></h3>
+          <div class="text">{{ item.description|safe }}</div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}
+

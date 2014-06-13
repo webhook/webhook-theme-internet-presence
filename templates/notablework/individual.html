@@ -1,0 +1,61 @@
+{# INDIVIDUAL VIEW FOR EACH notablework #}
+{# You can find a full list of variables to use on this page in your CMS. #}
+{% extends "templates/partials/base.html" %}
+{% block content %}
+  <h1>{{ item.name }}</h1>
+  <p><a href="/notablework/">View a list of all notablework</a></p>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Sort order: </strong>
+        {{ item.sort_order }}
+      </li>
+      <li>
+        <strong>Time period: </strong>
+        {{ item.time_period }}
+      </li>
+      <li>
+        <strong>Link: </strong>
+        {{ item.link }}
+      </li>
+      <li>
+        <strong>Gallery: </strong>
+        {# List all images from this gallery. #}
+        <ul>
+          {% for image in item.gallery %}
+            <li>
+              {# You can get the raw image url by accessing image.url #}
+              <img src="{{ image|imageSize(200,200) }}">
+              <div>{{ image.caption }}</div>
+            </li>
+          {% endfor%}
+        </ul>
+      </li>
+      <li>
+        <strong>Preview URL: </strong>
+        {{ item.preview_url }}
+      </li>
+      <li>
+        <strong>Description: </strong>
+        {{ item.description|safe }}
+      </li>
+  </ul>
+{% endblock %}

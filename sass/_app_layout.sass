@@ -1,0 +1,101 @@
+header
+  text-align: center
+nav li
+  display: inline-block
+nav li a
+  display: inline-block
+  padding: 0 $base-line-height / 2
+  color: $text-color !important
+  text-decoration: underline
+  font-family: $custom-font-family
+  font-size: 120%
+.home-img
+  position: fixed
+  bottom: 0
+  left: auto
+  height: auto
+  overflow: hidden
+
+header h1
+  margin-bottom: $base-line-height / 2
+  a
+    color: $text-color !important
+header img
+  border-radius: 100px
+  margin-bottom: $gutter
+.social
+  font-size: 28px
+  text-align: center
+  li
+    margin-right: 14px
+    display: inline-block
+  a
+    color: $text-color
+.container
+  +outer-container
+  max-width: 800px
+  margin-top: $gutter * 2
+
+.work li
+  +outer-container
+  border-bottom: solid 1px $table-border-color
+  padding: $gutter 0
+  position: relative
+  min-height: 250px
+  .desc, .gallery
+    +span-columns(6)
+  .desc
+    +omega
+    .time
+      color: $text-medium
+      font-size: 90%
+      margin-bottom: $base-line-height / 4
+    .text
+      position: absolute
+      bottom: $gutter
+      right: 0
+      +span-columns(6)
+    h3
+      margin-bottom: $base-line-height / 2
+      font-size: 150%
+      font-weight: normal
+  .gallery a
+    display: none
+  .gallery a:first-child
+    display: block
+  .gallery img
+    width: 100%
+  p:last-child
+    margin-bottom: 0
+
++media($tablet)
+  .home-main
+    width: 100%
+    padding: $gutter * 2
+  .home-img
+    display: none
++media($desktop)
+  .home-main
+    margin: $gutter * 2 $gutter * 4
+    max-width: 40%
+  .home-img
+    width: 40%
+    right: $gutter * 2
+    top: $gutter * 2
+    text-align: center
+    img
+      height: auto
+      max-width: 75%
++media($desktop-wide)
+  .home-main
+    margin: $gutter * 2 $gutter * 4
+    max-width: 40%
+  .home-img
+    width: 40%
+    top: 0
+    right: 0
+    text-align: right
+    img
+      width: auto
+      height: 100%
+      max-width: none

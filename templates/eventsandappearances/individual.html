@@ -1,0 +1,41 @@
+{# INDIVIDUAL VIEW FOR EACH eventsandappearances #}
+{# You can find a full list of variables to use on this page in your CMS. #}
+{% extends "templates/partials/base.html" %}
+{% block content %}
+  <h1>{{ item.name }}</h1>
+  <p><a href="/eventsandappearances/">View a list of all eventsandappearances</a></p>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Event date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.event_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Event date: descriptive: </strong>
+        {{ item.event_date_descriptive }}
+      </li>
+      <li>
+        <strong>Description: </strong>
+        {{ item.description|safe }}
+      </li>
+  </ul>
+{% endblock %}
