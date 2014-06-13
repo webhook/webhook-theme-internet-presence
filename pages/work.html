@@ -5,20 +5,8 @@
 
 {% block content %}
   <div class="container">
-    <header>
-      <a href="/"><img src="{{ about.photo|imageCrop(100) }}" /></a>
-      <h1><a href="/">{{ about.name }}</a></h1>
-      <div class="tagline">{{ about.tagline|safe }}</div>
-      <hr>
-      <nav>
-        <ul>
-          <li><a href="/work/">Work</a></li>
-          <li><a href="/work/">Appearances</a></li>
-          <li><a href="/work/">Essays</a></li>
-        </ul>
-      </nav>
-      <hr>
-    </header>
+    {% include "templates/partials/header.html" %}
+
     <ul class="work">
     {% for item in work|sort('sort_order') %}
       <li>
@@ -35,6 +23,7 @@
       </li>
     {% endfor %}
     </ul>
+    {% include "templates/partials/social.html" %}
   </div>
 
 {% endblock %}

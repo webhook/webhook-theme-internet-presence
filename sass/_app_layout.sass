@@ -16,6 +16,9 @@ nav li a
   height: auto
   overflow: hidden
 
+.home-main img
+  display: none
+
 header h1
   margin-bottom: $base-line-height / 2
   a
@@ -26,6 +29,7 @@ header img
 .social
   font-size: 28px
   text-align: center
+  margin-bottom: $gutter
   li
     margin-right: 14px
     display: inline-block
@@ -35,6 +39,9 @@ header img
   +outer-container
   max-width: 800px
   margin-top: $gutter * 2
+
+.work
+  margin-bottom: $gutter
 
 .work li
   +outer-container
@@ -72,6 +79,8 @@ header img
   .home-main
     width: 100%
     padding: $gutter * 2
+    img
+      display: inline-block
   .home-img
     display: none
 +media($desktop)
